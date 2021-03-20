@@ -94,10 +94,10 @@ client.on("voiceStateUpdate", async (oldMember, newMember) => {
             ).send(
                 new Discord.RichEmbed()
                     .setTitle(
-                        `${
+                        `VOICE CHANNEL ${
                             newState
-                                ? "VOICE CHANNEL JOINED"
-                                : "VOICE CHANNEL LEFT"
+                                ? "JOINED"
+                                : "LEFT"
                         } TRACKER :`
                     )
                     .setDescription(
